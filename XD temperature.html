@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      class Temperature{
+          constructor(Celsius) {
+              this.Celsius=Celsius
+          }
+          getFahrenheit(){
+              return (this.Celsius+32)*1.8
+          }
+          getKevin(){
+              return (this.Celsius + 273)
+          }
+      }
+
+      let a=+prompt("mời bạn nập nhiệt độ")
+      let Temperature1 = new Temperature(a)
+      let F = Temperature1.getFahrenheit()
+      let K = Temperature1.getKevin()
+      alert("Độ F là: " + F)
+      alert("Độ K là: " + K)
+
+  </script>
+</body>
+</html>
